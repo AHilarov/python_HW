@@ -7,7 +7,7 @@
 
 import random
 n = int(input('Enter number of coins: '))
-a = [random.randint(0, 1) for i in range(n)]
+a = [random.randint(0, 1) for _ in range(n)]
 print(a)
 if a.count(0) < a.count(1) or a.count(0) == a.count(1):
     print('You need to turn', a.count(0), 'coins')
