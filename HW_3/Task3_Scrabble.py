@@ -36,7 +36,6 @@ def scrabble_score(word):
 print(scrabble_score(input('Enter the word: ')))
 
 
-
 # one = ('aeioulnstrавеинорст')
 # two = ('dgдклмпу')
 # three = ('bcmpбгёья')
