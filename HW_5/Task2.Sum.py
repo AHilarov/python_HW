@@ -7,8 +7,8 @@
 def sum(numA, numB):
     if numA == 0:
         return numB
-    if numA > 0:
-        return sum(numA-1, numB+1)
+
+    return sum(numA - 1, numB + 1)
 
 
 a = int(input('Enter number A: '))
