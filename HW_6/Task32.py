@@ -14,7 +14,7 @@ print(list(enumerate(my_list)))
 min_ = int(input('min = '))
 max_ = int(input('max = '))
 
-for i in range(len(my_list)):
+for i in range(n):
     if max_ >= my_list[i] >= min_:
         print(i, end=' ')
 

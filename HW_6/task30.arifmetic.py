@@ -27,11 +27,21 @@ print('Вариант 2:', *arr)
 # Вариант 3
 arr = [a]
 
-def arith1(list: arr, int: d, n) -> list:
+def arith1(arr, d, n) -> list:
     if n == 1:
         return arr
     a = arr[-1]
     arr.append(a + d)
     return arith1(arr, d, n-1)
 
+
 print('Вариант 3:', *arith1(arr, d, n))
+
+# Вариант 4
+
+def arith4(a, d, n):
+    if n == 1:
+        return [a]
+    return (second := arith4(a, d, n-1)) + [second[-1]+d]
+
+print('Вариант 4:', *arith4(a, d, n))
