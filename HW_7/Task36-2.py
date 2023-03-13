@@ -28,7 +28,7 @@ def operation(matrix):
     col = len(matrix[0])
     for i in range(1, row):
         for j in range(1,col):
-            matrix[i][j] = matrix[i][0]*matrix[0][j]
+            matrix[i][j] = matrix[i][0]**matrix[0][j]
 
 r=int(input('Enter numder of rows: '))
 c=int(input('Enter numder of colums: '))
